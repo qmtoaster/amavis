@@ -1,0 +1,9 @@
+wget
+wget
+tar zxvf qmail-amavisd-0.94.tgz
+cd qmail-amavisd-0.94
+patch < ../qmail-amavisd-0.94
+make
+cp qmail-queue.smtp /var/qmail/bin
+chown qmailq:qmail /var/qmail/bin/qmail-queue.smtp
+chmod 4711 /var/qmail/bin/qmail-queue.smtp
