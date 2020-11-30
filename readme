@@ -1,5 +1,5 @@
-wget
-wget
+wget https://raw.githubusercontent.com/qmtoaster/amavis/main/qmail-amavisd-0.94.patch
+wget https://raw.githubusercontent.com/qmtoaster/amavis/main/qmail-amavisd-0.94.tgz
 tar zxvf qmail-amavisd-0.94.tgz
 cd qmail-amavisd-0.94
 patch < ../qmail-amavisd-0.94
